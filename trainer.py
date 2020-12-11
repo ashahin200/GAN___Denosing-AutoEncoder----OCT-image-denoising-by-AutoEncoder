@@ -1,10 +1,11 @@
 from autoencoder import AutoEncoder
+from oct_dataset import build_dataset
 
 # Declare the model
 autoencoder = AutoEncoder()
 
 
-x_train_noisy, x_train = build_dataset('./data')
+x_train_noisy, x_train = build_dataset()
 
 # train the autoencoder model
 autoencoder.fit(x_train_noisy, x_train,
