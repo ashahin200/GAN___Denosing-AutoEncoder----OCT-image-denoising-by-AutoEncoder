@@ -99,7 +99,7 @@ class AutoEncoder(object):
 
 
     def summary(self):
-        return self.Generator.summary()
+        return self.AutoEncoder.summary()
     
     def save_model(self):
         pass
